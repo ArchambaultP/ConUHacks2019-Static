@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="need-match.css">
+    </head>
+    <body>
+            <div class="container">
+                    <div class="row">
+                        <div class="r_card">
+                            <div class="r_card_header">
+                            </div>
+                            <div class="r_card_content">
+                                <div class="adress">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    V.K. Stujeske 6, Osijek 31000, Hrvatska
+                                </div>
+                                <div class="text_info">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione odio provident reiciendis, exercitationem ex quidem voluptatum quas minus id, ea ut, cupiditate sunt. Incidunt vitae nihil sapiente impedit temporibus, repellat!
+                                    <div class="text_info_shade"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="r_card">
+                                <div class="r_card_header">
+                                </div>
+                                <div class="r_card_content">
+                                    <div class="adress">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        V.K. Stujeske 6, Osijek 31000, Hrvatska
+                                    </div>
+                                    <div class="text_info">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione odio provident reiciendis, exercitationem ex quidem voluptatum quas minus id, ea ut, cupiditate sunt. Incidunt vitae nihil sapiente impedit temporibus, repellat!
+                                        <div class="text_info_shade"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="r_card">
+                                    <div class="r_card_header2"> 
+                                    </div>
+                                    <div class="r_card_content">
+                                        <div class="adress">
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            V.K. Stujeske 6, Osijek 31000, Hrvatska
+                                        </div>
+                                        <div class="text_info">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione odio provident reiciendis, exercitationem ex quidem voluptatum quas minus id, ea ut, cupiditate sunt. Incidunt vitae nihil sapiente impedit temporibus, repellat!
+                                            <div class="text_info_shade"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+                <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+                    $(document).ready(function(){
+            
+            $('.r_card').click(function(){
+                $('.text_info').toggleClass('active');
+                $('.text_info_shade').toggleClass('active_shade');
+            });
+            
+            });
+            
+                    </script>
+    </body>
+</html>
