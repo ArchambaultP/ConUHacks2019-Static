@@ -6,12 +6,13 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="need.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     </head>
     <body>
         <div>
         <h1 class="search-header">Search For Produce</h1>
         <div class="search-box">
-            <input type="text" placeholder="Type to search" class="search-txt">
+            <input id="tags" type="text" placeholder="Type to search" class="search-txt">
             <a href="" class="search-btn">
                     <i class="fas fa-search"></i>
             </a>
@@ -20,7 +21,32 @@
                     <li><a href="#">Item 2</a></li>
                     <li><a href="#">Item 3</a></li>
             </ul>
+        </div>  
+        <div id="fruit-container">
+                <div id="banana">
+                       Banana
+                </div>
+                <div id="apple">
+                        Apple
+                </div>
+                <div id="lemon">
+                        Lemon
+                </div>
         </div>
         </div>
     </body>
+        <script type="text/javascript">
+
+$('#tags').on('input',function(e){
+    var container = $('#fruit-container');
+    var text = $('#tags').val();
+    container.children('div').each(function () {
+            if($(this).text().match(text)){
+                $(this).show();
+            }else{
+                $(this).hide();
+            } // "this" is the current element in the loop
+});
+});
+        </script>
 </html>
