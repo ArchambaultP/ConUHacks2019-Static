@@ -1,0 +1,65 @@
+body{
+    background-image: url("fruits.jpg"); 
+    background-color: #cccccc; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.SI{
+    text-align: center;
+}
+
+.box{
+    -webkit-animation: fadein 1s;
+    background:#f2f2f2;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+.Bigbox{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    
+}
+.form{
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+.form-control {
+    position: relative;
+    left: 20px;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+input[type="Username"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 10px
+  }
+input[type="Pass"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 10px;
+  }
+  .button {
+    background-color: #4CAF50; 
+    position: relative;
+    left: 60px;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    font-size: 15px;
+  }
+  @-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
