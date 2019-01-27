@@ -40,7 +40,7 @@
                     <img src="vegetables.svg" alt="" height="35px">
                   Produce
                 </h1>
-                <ol>
+                <ol id="test" >
                   <li id="banana">
                     <mark>Banana</mark>
                   </li>
@@ -50,10 +50,10 @@
                   <li id="lemon">
                     <mark>Lemon</mark>
                   </li>
-                  <li>
-                    <mark>Madrileños</mark>
+                  <li id="churros">
+                    <mark>Churros</mark>
                   </li>
-                  <li>
+                  <li id="chotillos">
                     <mark>Chotillos</mark>
                   </li>
                 </ol>
@@ -64,10 +64,11 @@
         <script type="text/javascript">
 
 $('#tags').on('input',function(e){
-    var container = $('#fruit-container');
+    var container = $('#test');
     var text = $('#tags').val();
-    container.children('div').each(function () {
-            if($(this).text().match(text)){
+    container.children('li').each(function () {
+
+            if($(this).attr('id').match(text)){
                 $(this).show();
             }else{
                 $(this).hide();
