@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Chat</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+</head>
+
+<body>
+  <div id="chatbox">
+   test 
+  </div>
+ 
+   <input id="textInput" type="text">
+  
+</body>
+
+  <script type="text/javascript">
+       $('#textInput').keypress(function(event) {
+            if (event.keyCode == 13) {
+                var text = $("#textInput").val();
+                    $("#chatbox").prepend(text+'<br>');
+            }
+        });
+     
+  </script>
+</html>
