@@ -41,6 +41,9 @@
                   Produce
                 </h1>
                 <ol id="test" >
+                  <li id="tomato">
+                    <mark>Tomato</mark>
+                  </li>
                   <li id="banana">
                     <mark>Banana</mark>
                   </li>
@@ -75,5 +78,9 @@ $('#tags').on('input',function(e){
             } // "this" is the current element in the loop
 });
 });
+
+$('#tomato').click(function(){
+    window.location.href = '/need-match'
+})
         </script>
 </html>

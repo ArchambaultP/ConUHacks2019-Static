@@ -22,11 +22,19 @@
   </head>
   <body>
     <div class="containerSelection">
-        <div class="box">Share</div>
-        <div class="box">Lookup</div>
+            <div id="share" class="box">Share</div>
+            <div id="need" class="box">Lookup</a></div>
     </div>
   </body>
   <script type="text/javascript">
   $(".box").hide(0).delay(100).fadeIn(500)
+
+   $("#share").click(function(){
+    window.location.href = '/share-form';
+   });
+
+   $("#need").click(function(){
+    window.location.href = '/need';
+   });
 </script>
 </html>
